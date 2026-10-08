@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+:root {
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  
+  /* Luxury Warm Neutral Palette */
+  --bg-primary: #FAF8F5;
+  --bg-surface: #FFFFFF;
+  --bg-warm: #F4EFEB;
+  --bg-stone: #EAE4DA;
+  --bg-charcoal: #1C1B1A;
+  
+  --text-primary: #1F1E1D;
+  --text-secondary: #5C5854;
+  --text-muted: #8C867F;
+  --text-light: #F7F5F2;
+  
+  --accent-gold: #9E7D4C;
+  --accent-bronze: #84653B;
+  --accent-gold-light: #C9A979;
+  
+  --border-subtle: rgba(28, 27, 26, 0.08);
+  --border-strong: rgba(28, 27, 26, 0.16);
+  --border-dark: rgba(255, 255, 255, 0.12);
+}
+
+@theme {
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+  
+  --color-warm-ivory: #FAF8F5;
+  --color-warm-beige: #F4EFEB;
+  --color-warm-stone: #EAE4DA;
+  --color-warm-taupe: #8C867F;
+  --color-warm-charcoal: #1C1B1A;
+  --color-warm-black: #141312;
+  --color-bronze: #9E7D4C;
+  --color-bronze-dark: #84653B;
+  --color-bronze-light: #C9A979;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  selection-background-color: #9E7D4C;
+  selection-color: #ffffff;
+}
+
+::selection {
+  background-color: #9E7D4C;
+  color: #ffffff;
+}
+
+/* Custom editorial typography utilities */
+.font-editorial-heading {
+  font-family: var(--font-serif);
+  letter-spacing: -0.02em;
+}
+
+.font-editorial-subheading {
+  font-family: var(--font-serif);
+  letter-spacing: -0.01em;
+}
+
+.tracking-editorial {
+  letter-spacing: 0.18em;
+}
+
+/* Smooth transitions */
+* {
+  border-color: var(--border-subtle);
+}
+
+/* Architectural thin line styles */
+.border-architectural {
+  border-color: rgba(28, 27, 26, 0.09);
+}
+
+.border-architectural-dark {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Custom Scrollbar for Luxury Aesthetic */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5CEBE;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9E7D4C;
+}
